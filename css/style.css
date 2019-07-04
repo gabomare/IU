@@ -1,0 +1,26 @@
+/* body{
+    padding: 5px 0;
+} */
+#arbol_banario{
+    width: 100%;
+    height: 550px;
+    border: 1px solid lightgray;
+}
+#boton_agregar_nodo, #nodo, #boton_ancestro_nodos{
+    width: 100%;
+    margin-bottom: 5px;
+}
+#boton_crear_arbol{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#nodo_uno,#nodo_dos{
+    margin-bottom: 10px;
+}
+.botonera{
+    padding: 0;
+    margin: 10px 0;
+}
+.grupo-ancestro{
+    display: none;
+}
