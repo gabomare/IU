@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arbol Binario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="col-md-12">
+        <h3>Creación Árbol Binario</h3>
+    </div>
+    <div class="col-md-2">
+        <label>Nodo</label>
+        <input class="form-control" type="text" id="nodo">
+        <div class="col-md-12 botonera">
+           <button class="btn btn-default" id="boton_agregar_nodo">Agregar Nodo</button>
+           <button class="btn btn-default" id="boton_crear_arbol">Crear Árbol</button>
+           
+           <!-- sección ancestro común -->
+           <label for="chk_ancestro_comun">
+                <input type="checkbox" id="chk_ancestro_comun" value="0">
+                Ancestro Común
+           </label>
+           <div class="grupo-ancestro">
+                <label>Nodo 1</label>
+               <input class="form-control" type="text" id="nodo_uno">
+               <label>Nodo 2</label>
+               <input class="form-control" type="text" id="nodo_dos">
+               <button class="btn btn-default" id="boton_ancestro_nodos">Hallar Ancestro Común</button>
+           </div>
+        </div>
+        <label id="mensajes_usuario"></label>
+    </div>
+    <div class="col-md-10">
+        <div id="arbol_banario"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/requests.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
